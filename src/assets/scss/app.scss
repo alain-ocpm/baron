@@ -37,6 +37,8 @@
 @include foundation-pagination;
 @include foundation-tooltip;
 
+@import 'components/hero.scss';
+
 // Containers
 @include foundation-accordion;
 @include foundation-media-object;
