@@ -3,18 +3,21 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-@import 'global/base.scss';
-@import 'global/typography.scss';
 
 // Global styles
 @include foundation-global-styles;
 @include foundation-forms;
 @include foundation-typography;
+@import 'global/base.scss';
+@import 'global/typography.scss';
 
+// Global layout
 // Grids (choose one)
 @include foundation-xy-grid-classes;
 // @include foundation-grid;
 // @include foundation-flex-grid;
+
+//@import layout/
 
 // Generic components
 @include foundation-button;
@@ -59,7 +62,7 @@
 @include foundation-float-classes;
 @include foundation-flex-classes;
 @include foundation-visibility-classes;
-// @include foundation-prototype-classes;
+@include foundation-prototype-classes;
 
 // Motion UI
 @include motion-ui-transitions;
