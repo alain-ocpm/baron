@@ -1,1 +1,8 @@
 @import 'foundation-icons.scss';
+
+blockquote {
+  border: none;
+  font-family: $header-font-family;
+  font-size: 2rem;
+  line-height: 1;
+}

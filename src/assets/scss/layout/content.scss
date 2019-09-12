@@ -1,0 +1,15 @@
+.content {
+  & * {
+    margin-bottom: $global-margin;
+  }
+
+  background: white;
+  padding: $global-padding;
+  @include breakpoint(medium) {
+    padding: 2 * $global-padding;
+  }
+
+  .img-full-width {
+    width: 100%;
+  }
+}

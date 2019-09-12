@@ -4,20 +4,35 @@
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1445296608114-4b8fabe48256?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80');
+  align-items: center;
   background-position: center;
   background-size: cover;
-  align-items: center;
+  color: white;
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
   justify-content: center;
+  min-height: 90vh;
 
   .content {
     background: rgba($dark-primary, 0.75);
     padding: 2em;
-    max-width: 75%;
+    max-width: 95%;
+    width: 1000px;
 
-    h1 { font-size: 2.5rem; line-height: 3rem } h2 { font-size: 2rem; line-height: 2.5rem }
+    @include breakpoint(medium) {
+      max-width: 75%;
+    }
+
+    h1 { font-size: 1.5rem; font-weight: 700; line-height: 2rem } h2 { font-size: 1.5rem; line-height: 2rem }
+
+    @include breakpoint(medium) {
+      h1 { font-size: 2.5rem; font-weight: 700; line-height: 3rem } h2 { font-size: 2rem; line-height: 2.5rem }
+    }
+  }
+}
+
+@include breakpoint(large) {
+  .hero-margin {
+    margin-bottom: 2 * $global-margin;
   }
 }
