@@ -1,0 +1,24 @@
+@include breakpoint(medium) {
+  .front-page-tabs {
+    display: flex;
+    height: 90vh;
+
+    .tabs {
+      display: flex;
+      flex: 1 0 30%;
+      flex-direction: column;
+      order: 1;
+      overflow-y: auto;
+    }
+
+    .tabs-title {
+      float: none;
+      width: 100%;
+
+      a {
+        align-items: center;
+        display: flex;
+      }
+    }
+  }
+}

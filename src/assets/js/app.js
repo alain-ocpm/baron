@@ -14,4 +14,8 @@ require('foundation-sites');
 //import './lib/foundation-explicit-pieces';
 
 
+if(!$('.tabs-panel')[0].classList.contains("is-active"))
+  $('.tabs-panel')[0].classList.add("is-active")
+
+
 $(document).foundation();
