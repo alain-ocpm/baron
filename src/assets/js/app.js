@@ -12,10 +12,21 @@ require('foundation-sites');
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
+//import test from './lib/test';
 
+$(document).foundation();
 
 if(!$('.tabs-panel')[0].classList.contains("is-active"))
   $('.tabs-panel')[0].classList.add("is-active")
 
+var myModule = (function() {
+  'use strict';
 
-$(document).foundation();
+  return {
+    publicMethod: function() {
+      console.log('Hello World!');
+    }
+  };
+}());
+
+//myModule.publicMethod();  // outputs 'Hello World'
