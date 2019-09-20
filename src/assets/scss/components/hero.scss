@@ -13,9 +13,22 @@
   justify-content: center;
   min-height: 90vh;
 
-  .content {
-    background: rgba($dark-primary, 0.75);
+  &.hero-title {
+    justify-content: flex-end;
+  }
+
+  .title, .content {
+    background: rgba($dark-primary, 0.85);
     padding: 2em;
+  }
+
+  .title {
+    align-self: flex-end;
+    position: relative;
+    right: 1.5em;
+  }
+
+  .content {
     max-width: 95%;
     width: 1000px;
 
@@ -30,6 +43,7 @@
     }
   }
 }
+
 
 @include breakpoint(large) {
   .hero-margin {
