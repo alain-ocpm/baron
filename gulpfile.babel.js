@@ -14,6 +14,7 @@ import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 import uncss         from 'uncss';
 import autoprefixer  from 'autoprefixer';
+import swiper        from 'swiper';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();

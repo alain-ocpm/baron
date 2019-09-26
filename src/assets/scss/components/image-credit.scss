@@ -1,0 +1,22 @@
+.image-credit {
+  background-color: rgba(black, 0.25);
+  border-radius: 5px;
+  color: white;
+  display: none;
+  float: right;
+  padding: 0.75rem;
+  position: relative;
+  top: (-$global-lineheight - (0.75 * 2 + 1)) + rem; right: 1rem;
+
+  .fi-camera {
+    font-style: normal;
+    
+    &::before {
+      padding-right: 0.5rem;
+    }
+  }
+
+  @include breakpoint(medium) {
+    display: block;
+  }
+}

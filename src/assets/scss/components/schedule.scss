@@ -1,0 +1,38 @@
+.schedule {
+  .tabs {
+    border: none;
+  }
+
+  & .tabs-title {
+    a {
+      padding: $global-padding;
+    }
+
+    &.is-active {
+      a {
+        background: $dark-primary;
+      }
+    }
+  }
+
+  & .tabs-content {
+    background: $dark-primary;
+    border: none;
+
+    & .tabs-panel {
+      padding: $global-margin 0;
+
+      .cell {
+        margin-right: $global-margin;
+
+        &:first-child {
+          margin-left: $global-margin;
+        }
+
+        .accordion {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
