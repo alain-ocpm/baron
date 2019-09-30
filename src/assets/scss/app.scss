@@ -37,9 +37,11 @@
 @include foundation-pagination;
 @include foundation-tooltip;
 
+@import 'components/icon.scss';
 @import 'components/hero.scss';
 @import 'components/front-page-tabs.scss';
 @import 'components/schedule.scss';
+@import 'components/article-card.scss';
 
 @import 'components/image-credit.scss';
 

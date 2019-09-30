@@ -1,18 +1,7 @@
-<style>
-  @media only screen and (min-width: 640px) {
-    .thing {
-      -webkit-box-pack: flex-start;
-      -webkit-justify-content: flex-start;
-      -ms-flex-pack: flex-start;
-      justify-content: flex-start;
-    }
-  }
-</style>
-
-<div class="front-page-tabs">
+<div style="display: none;" class="front-page-tabs">
   <ul class="tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs large-tabs" id="collapsing-tabs" data-allow-all-closed="true" data-multi-expand="false">
   <li class="tabs-title is-active">
-    <a href="#panel1" aria-selected="true">      
+    <a href="#panel1" aria-selected="true">
       <div>
         <h5>Un titre d'onglet<h5>
         <h6>Un assez long sous-titre d'onglet<h6>
@@ -136,20 +125,27 @@
   </div>
 </div>
 
+
+
 <div class="grid-container" data-magellan-target="content">
   <div class="grid-x grid-margin-x">
     <div class="thing small-12 large-8 cell">
       <h2>Articles</h2>
-      <div class="grid-x grid-margin-y">
+      <div class="article-card-container grid-x grid-margin-y">
         <div class="cell">{{> article-card }}</div>
         <div class="cell">{{> article-card }}</div>
         <div class="cell">{{> article-card }}</div>
       </div>
+      <div id="show-more" data-toggler=".expanded" class="article-card-container grid-x grid-margin-y">
+        <div class="cell">{{> article-card }}</div>
+        <div class="cell">{{> article-card }}</div>
+        <div class="cell">{{> article-card }}</div>
+      </div>
+      <button class="icon"><i data-toggle="show-more" class="fi-plus icon-dropdown"></i></button>
     </div>
     <div class="small-12 large-4 cell">
       <h2>Rapports</h2>
-      <div class="thing grid-x align-center grid-margin-x grid-margin-y">
-          <div class="shrink cell"><img src="https://via.placeholder.com/150x150" /></div>
+      <div class="small-up-2 medium-up-4 large-up-2 thing grid-x align-center grid-margin-x grid-margin-y">
           <div class="shrink cell"><img src="https://via.placeholder.com/150x150" /></div>
           <div class="shrink cell"><img src="https://via.placeholder.com/150x150" /></div>
           <div class="shrink cell"><img src="https://via.placeholder.com/150x150" /></div>
@@ -158,3 +154,11 @@
     </div>
   </div>
 </div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

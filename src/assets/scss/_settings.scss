@@ -76,12 +76,12 @@ $foundation-palette: (
 );
 $dark-primary: #455A64; /*35454d */
 $light-gray: #e6e6e6;
-$cool-gray: #e1e3e5;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
-$body-background: $cool-gray;
+$medium-gray: #bdbdbd;
+$dark-gray: #757575;
+$black: #212121;
+$white: #ffffff;
+$accent: #1e9fb3;
+$body-background: $light-gray;
 $body-font-color: $black;
 $body-font-family: 'Open Sans', Roboto, Arial, sans-serif;
 $body-antialiased: true;
@@ -141,17 +141,17 @@ $header-lineheight: 1.2;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 22),
-    'h2': ('font-size': 18),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
+    'h1': ('font-size': 36),
+    'h2': ('font-size': 32),
+    'h3': ('font-size': 25),
+    'h4': ('font-size': 22),
+    'h5': ('font-size': 20),
     'h6': ('font-size': 16),
   ),
   medium: (
     'h1': ('font-size': 44),
     'h2': ('font-size': 36),
-    'h3': ('font-size': 31),
+    'h3': ('font-size': 32),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
@@ -169,8 +169,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color: $accent;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -25%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
