@@ -3,6 +3,11 @@
   animation-duration: 1s;
 }
 
+.animate-slide {
+  @include mui-animation(slide);
+  animation-duration: 10s;
+}
+
 .hero {
   align-items: center;
   background-position: center;

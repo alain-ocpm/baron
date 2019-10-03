@@ -16,17 +16,24 @@ require('foundation-sites');
 
 $(document).foundation();
 
-if(!$('.tabs-panel')[0].classList.contains("is-active"))
-  $('.tabs-panel')[0].classList.add("is-active")
+/* if(!$('.tabs-panel')[0].classList.contains("is-active"))
+  $('.tabs-panel')[0].classList.add("is-active") */
 
-var myModule = (function() {
-  'use strict';
+//FRONT PAGE
 
-  return {
-    publicMethod: function() {
-      console.log('Hello World!');
+//Button
+
+if( $('.button-icon-expand').length != 0) {
+}
+
+//Show More Article Cards
+
+if( $('#article-card-show-more').length != 0) {
+  $('#article-card-show-more').on( "click", function() {
+    var hiddenElements = $(this).siblings(".article-card-container").children(".is-hidden").length;
+
+    for (var i = 0; i < 3; i++) {
+      $( $(this).siblings(".article-card-container").children(".is-hidden")[0] ).removeClass("is-hidden");
     }
-  };
-}());
-
-//myModule.publicMethod();  // outputs 'Hello World'
+  });
+}

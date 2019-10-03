@@ -1,0 +1,23 @@
+button {
+  background: $anchor-color;
+  border-radius: 999rem;
+  color: $white;
+  line-height: 0.75; //kinda hacky
+  padding: 0.75rem;
+
+  &.button-icon-expand {
+    & > i {
+      & > span {
+        display: none;
+      }
+    }
+
+    &:hover {
+      & > i {
+        & > span {
+          display: inline;
+        }
+      }
+    }
+  }
+}

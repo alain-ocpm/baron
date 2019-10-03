@@ -125,23 +125,22 @@
   </div>
 </div>
 
-
-
 <div class="grid-container" data-magellan-target="content">
   <div class="grid-x grid-margin-x">
     <div class="thing small-12 large-8 cell">
       <h2>Articles</h2>
       <div class="article-card-container grid-x grid-margin-y">
-        <div class="cell">{{> article-card }}</div>
-        <div class="cell">{{> article-card }}</div>
-        <div class="cell">{{> article-card }}</div>
+        <div class="cell">1{{> article-card }}</div>
+        <div class="cell">2{{> article-card }}</div>
+        <div class="cell">3{{> article-card }}</div>
+        <div class="cell animate-fade is-hidden">4{{> article-card }}</div>
+        <div class="cell animate-fade is-hidden">5{{> article-card }}</div>
+        <div class="cell animate-fade is-hidden">6{{> article-card }}</div>
+        <div class="cell animate-fade is-hidden">7{{> article-card }}</div>
+        <div class="cell animate-fade is-hidden">8{{> article-card }}</div>
+        <div class="cell animate-fade is-hidden">9{{> article-card }}</div>
       </div>
-      <div id="show-more" data-toggler=".expanded" class="article-card-container grid-x grid-margin-y">
-        <div class="cell">{{> article-card }}</div>
-        <div class="cell">{{> article-card }}</div>
-        <div class="cell">{{> article-card }}</div>
-      </div>
-      <button class="icon"><i data-toggle="show-more" class="fi-plus icon-dropdown"></i></button>
+      <button id="article-card-show-more" class="button-icon button-icon-expand"><i class="fi-plus icon-dropdown"><span>Tous les articles</span></i></button>
     </div>
     <div class="small-12 large-4 cell">
       <h2>Rapports</h2>
