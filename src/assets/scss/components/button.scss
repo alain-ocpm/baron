@@ -5,13 +5,17 @@ button {
   line-height: 0.75; //kinda hacky
   padding: 0.75rem;
 
-  &.button-icon-expand {
-    & > i {
-      & > span {
-        display: none;
-      }
-    }
+  &:hover {
+    background: $anchor-color-hover;
+  }
 
+  & > i {
+    & > span {
+      display: none;
+    }
+  }
+
+  &.button-icon-expand {
     &:hover {
       & > i {
         & > span {

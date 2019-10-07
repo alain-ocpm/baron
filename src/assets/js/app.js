@@ -21,6 +21,11 @@ $(document).foundation();
 
 //FRONT PAGE
 
+//Tabs
+if( $('#front-page-tabs').length != 0) {
+
+}
+
 //Button
 
 if( $('.button-icon-expand').length != 0) {
@@ -30,10 +35,14 @@ if( $('.button-icon-expand').length != 0) {
 
 if( $('#article-card-show-more').length != 0) {
   $('#article-card-show-more').on( "click", function() {
+    for (var i = 0; i < 3; i++) {
+      $( $(this).siblings( ".article-card-container").children(".is-hidden")[0] ).removeClass("is-hidden");
+    }
+
     var hiddenElements = $(this).siblings(".article-card-container").children(".is-hidden").length;
 
-    for (var i = 0; i < 3; i++) {
-      $( $(this).siblings(".article-card-container").children(".is-hidden")[0] ).removeClass("is-hidden");
+    if(!hiddenElements) {
+      $("#article-card-show-more").addClass("button-icon-expand");
     }
   });
 }

@@ -1,11 +1,12 @@
 @include breakpoint(medium) {
-  .front-page-tabs {
+  #front-page-tabs {
     display: flex;
     height: 90vh;
 
     .tabs {
       display: flex;
-      flex: 1 0 30%;
+      border: none;
+      flex: 1 0 300px;
       flex-direction: column;
       order: 1;
       overflow-y: auto;
@@ -13,11 +14,31 @@
 
     .tabs-title {
       float: none;
+      min-height: 90px;
       width: 100%;
+
+      &:nth-child(odd) {
+        background: $light-gray;
+      }
 
       a {
         align-items: center;
         display: flex;
+        height: 100%;
+        padding: $global-padding;
+
+        &[aria-selected='true'] {
+          color: $white;
+        }
+      }
+    }
+
+    .tabs-content {
+      border: none;
+      border-right: 1rem solid $accent;
+
+      .tabs-panel {
+        height: 100%;
       }
     }
   }
