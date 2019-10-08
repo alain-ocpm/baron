@@ -22,18 +22,18 @@
     justify-content: flex-end;
   }
 
-  .title, .content {
+  .hero-title-text, .hero-content {
     background: rgba($dark-primary, 0.85);
     padding: 2em;
   }
 
-  .title {
+  .hero-title-text {
     align-self: flex-end;
     position: relative;
     right: 1.5em;
   }
 
-  .content {
+  .hero-content {
     max-width: 95%;
     width: 1000px;
 
