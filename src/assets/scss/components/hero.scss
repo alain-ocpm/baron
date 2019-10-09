@@ -30,14 +30,15 @@
 
   .hero-title-text {
     align-self: flex-end;
+    margin: 2em 2em 3em 2em;
     position: relative;
     right: 1.5em;
   }
 
   .hero-scroll {
-    $hero-scroll-icon-width: 1.5em;
+    $hero-scroll-icon-width: 2em;
 
-    bottom: 0.25em;
+    bottom: 0.5em;
     position: absolute;
     text-align: center;
 
@@ -46,27 +47,38 @@
     }
 
     span {
-      border: $hero-scroll-icon-width/10 solid $white;
+      border: $hero-scroll-icon-width/10 solid scale-color($white, $alpha: -25%);
       border-radius: 50%;
       display: inline-block;
       height: $hero-scroll-icon-width;
+      transition: border-color 0.5s;
       width: $hero-scroll-icon-width;
-    }
 
-    span:after {
-      border-top: $hero-scroll-icon-width/10 solid $white;
-      border-right: $hero-scroll-icon-width/10 solid $white;
-      content: '';
-    	display: inline-block;
-      height: $hero-scroll-icon-width/3.33333;
-      margin-top: $hero-scroll-icon-width/5;
-      transform: rotate(135deg);
-      width: $hero-scroll-icon-width/3.33333;
+      &:after {
+        border-top: $hero-scroll-icon-width/10 solid scale-color($white, $alpha: -25%);
+        border-right: $hero-scroll-icon-width/10 solid scale-color($white, $alpha: -25%);
+        content: '';
+        display: inline-block;
+        height: $hero-scroll-icon-width/3.33333;
+        margin-top: $hero-scroll-icon-width/5;
+        transform: rotate(135deg);
+        transition: margin 1s, border-color 0.5s;
+        width: $hero-scroll-icon-width/3.33333;
+      }
+
+      &:hover {
+        border-color: $white;
+
+        &:after {
+          border-color: $white;
+          margin-top: $hero-scroll-icon-width/5 + 0.15em;
+        }
+      }
     }
   }
 
   .hero-content {
-    margin: 2em;
+    margin: 2em 2em 3em 2em;
     max-width: 95%;
     width: 1000px;
 
