@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: 90vh;
+  position: relative;
 
   &.hero-title {
     justify-content: flex-end;
@@ -33,7 +34,39 @@
     right: 1.5em;
   }
 
+  .hero-scroll {
+    $hero-scroll-icon-width: 1.5em;
+
+    bottom: 0.25em;
+    position: absolute;
+    text-align: center;
+
+    a {
+      line-height: 0;
+    }
+
+    span {
+      border: $hero-scroll-icon-width/10 solid $white;
+      border-radius: 50%;
+      display: inline-block;
+      height: $hero-scroll-icon-width;
+      width: $hero-scroll-icon-width;
+    }
+
+    span:after {
+      border-top: $hero-scroll-icon-width/10 solid $white;
+      border-right: $hero-scroll-icon-width/10 solid $white;
+      content: '';
+    	display: inline-block;
+      height: $hero-scroll-icon-width/3.33333;
+      margin-top: $hero-scroll-icon-width/5;
+      transform: rotate(135deg);
+      width: $hero-scroll-icon-width/3.33333;
+    }
+  }
+
   .hero-content {
+    margin: 2em;
     max-width: 95%;
     width: 1000px;
 
