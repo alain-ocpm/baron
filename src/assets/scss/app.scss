@@ -10,6 +10,7 @@
 @include foundation-typography;
 @import 'global/base.scss';
 @import 'global/typography.scss';
+@import 'global/animation.scss';
 
 // Global layout
 // Grids (choose one)
@@ -43,6 +44,7 @@
 @import 'components/front-page-tabs.scss';
 @import 'components/schedule.scss';
 @import 'components/article-card.scss';
+@import 'components/team-card.scss';
 
 @import 'components/image-credit.scss';
 

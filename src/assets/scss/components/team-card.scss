@@ -1,0 +1,19 @@
+.team-card {
+  text-align: center;
+
+  img {
+    border-radius: 50%;
+    width: 256px;
+  }
+}
+
+.team-card-single {
+  @include breakpoint(medium) {
+    width: calc(100% - 2 * 0.46875rem) !important;
+  }
+
+  @include breakpoint(large) {
+    margin: 0 calc(25% + 0.46875rem) !important;
+    width: 50% !important;
+  }
+}
