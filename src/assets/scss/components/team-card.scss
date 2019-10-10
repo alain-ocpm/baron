@@ -1,19 +1,33 @@
 .team-card {
   text-align: center;
 
-  img {
-    border-radius: 50%;
-    width: 256px;
+  > div {
+    padding: $global-padding;
+    img {
+      border-radius: 50%;
+      width: 150px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 .team-card-single {
   @include breakpoint(medium) {
+    margin-bottom: $global-margin !important;
     width: calc(100% - 2 * 0.46875rem) !important;
+
+    > div {
+      img {
+        width: 250px;
+      }
+    }
   }
 
   @include breakpoint(large) {
-    margin: 0 calc(25% + 0.46875rem) !important;
+    margin: 0 calc(25% + 0.46875rem) $global-margin calc(25% + 0.46875rem) !important;
     width: 50% !important;
   }
 }

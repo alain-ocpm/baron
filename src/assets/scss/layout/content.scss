@@ -8,6 +8,10 @@
     padding: 2 * $global-padding;
   }
 
+  @include breakpoint(large) {
+    padding-top: 0;
+  }
+
   .img-full-width {
     width: 100%;
   }
