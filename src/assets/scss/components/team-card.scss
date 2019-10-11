@@ -1,16 +1,17 @@
 .team-card {
   text-align: center;
 
-  > div {
-    padding: $global-padding;
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  > div, > a > div {
+    padding: 2 * $global-padding;
     img {
       border-radius: 50%;
       width: 150px;
     }
 
-    p:last-child {
-      margin-bottom: 0;
-    }
   }
 }
 
