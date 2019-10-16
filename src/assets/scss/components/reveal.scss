@@ -1,0 +1,15 @@
+.reveal {
+  border-radius: 5px;
+
+  .reveal-content {
+    padding: $global-padding;
+  }
+
+  .reveal-image-container {
+    align-self: center;
+  }
+
+  .reveal-image-circle {
+    border-radius: 50%;
+  }
+}

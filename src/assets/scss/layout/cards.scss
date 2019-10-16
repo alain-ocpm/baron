@@ -7,4 +7,18 @@
   &:hover {
     box-shadow: 0px 10px 15px -8px rgba(0, 0, 0, 0.5), 0px 1px 5px 0px rgba(0, 0, 0, 0.07), 0px 1px 15px 0px rgba(0,0,0,.02);
   }
+
+  .article-taxonomy, .submitted-date {
+    i {
+      font-size: 90%;
+      font-style: normal;
+      padding-right: $global-padding;
+
+      &:before {
+        font-size: 1.5em;
+        padding-right: 5px;
+        vertical-align: middle;
+      }
+    }
+  }
 }
