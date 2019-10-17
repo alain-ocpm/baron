@@ -19,16 +19,25 @@ $(document).foundation();
 /* if(!$('.tabs-panel')[0].classList.contains("is-active"))
   $('.tabs-panel')[0].classList.add("is-active") */
 
+//GENERAL
+
+//Reveal
+if( $('.reveal').length != 0 ) {
+  $('.reveal').on('open.zf.reveal', function() {
+    $( $(this).children('.close-button') ).appendTo('.reveal-overlay');
+  });
+}
+
 //FRONT PAGE
 
 //Tabs
-if( $('#front-page-tabs').length != 0) {
+if( $('#front-page-tabs').length != 0 ) {
 
 }
 
 //Button
 
-if( $('.button-icon-expand').length != 0) {
+if( $('.button-icon-expand').length != 0 ) {
 }
 
 //Show More Article Cards

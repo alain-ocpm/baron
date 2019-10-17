@@ -13,3 +13,9 @@
     border-radius: 50%;
   }
 }
+
+.reveal-overlay {
+  .close-button {
+    z-index: $reveal-zindex + 1;
+  }
+}
