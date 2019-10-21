@@ -7,7 +7,7 @@
     .tabs {
       display: flex;
       border: none;
-      flex: 1 0 300px;
+      flex: 0 0 300px;
       flex-direction: column;
       order: 1;
       overflow-y: auto;
@@ -37,6 +37,7 @@
     .tabs-content {
       border: none;
       border-right: 1rem solid $accent;
+      flex: 1 1 auto;
 
       .tabs-panel {
         height: 100%;
