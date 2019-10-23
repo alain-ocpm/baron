@@ -28,6 +28,17 @@ if( $('.reveal').length != 0 ) {
   });
 }
 
+//Sortable Tables
+if( $('.table-sortable') ) {
+  $('[data-table-header-sort]').click(function(e) {
+    let parent = $( e.target ).parent();
+    let rows = $( e.target ).parents('table').find('tr');
+    //rows.index( parent )
+
+    console.log( rows );
+  });
+}
+
 //FRONT PAGE
 
 //Tabs
@@ -55,3 +66,5 @@ if( $('#article-card-show-more').length != 0) {
     }
   });
 }
+
+$.noConflict( true );
