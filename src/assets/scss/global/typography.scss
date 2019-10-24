@@ -6,3 +6,18 @@ blockquote {
   font-size: 2rem;
   line-height: 1;
 }
+
+.fas, .far, .fal, .fad, .fab {
+  &:before, &:after {
+    font-family: "Font Awesome 5 Pro";
+  }
+
+  font-family: inherit !important;
+  font-weight: inherit !important;
+}
+
+.fa, .fas {
+  &:before, &:after {
+    font-weight: 900;
+  }
+}
