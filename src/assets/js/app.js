@@ -32,10 +32,24 @@ if( $('.reveal').length != 0 ) {
 if( $('.table-sortable') ) {
   $('[data-table-header-sort]').click(function(e) {
     let parent = $( e.target ).parent();
+    let thIndex = parent.children().index( e.target );
     let rows = $( e.target ).parents('table').find('tr');
-    //rows.index( parent )
+    let ar = rows.get();
 
-    console.log( rows );
+    ar.sort(function(a,b){
+      let c = $(a).children().eq(thIndex).text();
+      let d = $(b).children().eq(thIndex).text();
+
+      return c.localeCompare(d)
+    });
+
+    console.log(ar);
+
+    // rows.each(function(i){
+    //   console.log($(this).children().eq(thIndex).text());
+    //
+    //
+    // });
   });
 }
 
