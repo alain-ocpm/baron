@@ -33,7 +33,8 @@ if( $('.table-sortable') ) {
   $('[data-table-header-sort]').click(function(e) {
     let parent = $( e.target ).parent();
     let thIndex = parent.children().index( e.target );
-    let rows = $( e.target ).parents('table').find('tr');
+    let table = $( e.target ).parents('table');
+    let rows = table.find('tr');
     let ar = rows.get();
 
     ar.sort(function(a,b){
@@ -42,6 +43,10 @@ if( $('.table-sortable') ) {
 
       return c.localeCompare(d)
     });
+
+    for (let i = 0; i < ar.length; i++) {
+      table.append(ar[i]);
+    }
 
     console.log(ar);
 
