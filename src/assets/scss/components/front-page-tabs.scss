@@ -22,6 +22,11 @@
         background: $light-gray;
       }
 
+      &.is-active {
+        box-shadow: 6px 0px 10px 3px rgba(0, 0, 0, 0.25);
+        z-index: 3;
+      }
+
       a {
         align-items: center;
         display: flex;
@@ -37,7 +42,20 @@
     .tabs-content {
       border: none;
       border-right: 1rem solid $accent;
+      //box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.35);
       flex: 1 1 auto;
+      position: relative;
+      z-index: 2;
+
+      &:after {
+        content: '';
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+        height: 100%;
+        position: absolute;
+        right: calc(-1rem - 10px);
+        top: 0;
+        width: 10px;
+      }
 
       .tabs-panel {
         height: 100%;
