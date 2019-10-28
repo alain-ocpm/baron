@@ -19,6 +19,11 @@ $(document).foundation();
 /* if(!$('.tabs-panel')[0].classList.contains("is-active"))
   $('.tabs-panel')[0].classList.add("is-active") */
 
+function elementExists(e) {
+  //takes a jQUery selector and checks if the element is present on the page
+  return ( $(e).length != 0 ) ? true : false;
+}
+
 //GENERAL
 
 //Reveal
@@ -61,8 +66,8 @@ if( $('.table-sortable') ) {
 //FRONT PAGE
 
 //Tabs
-if( $('#front-page-tabs').length != 0 ) {
-
+if( elementExists('#front-page-tabs') ) {
+  console.log(this);
 }
 
 //Button
