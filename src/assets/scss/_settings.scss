@@ -74,6 +74,13 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+/*Palette*/
+$teal: #1e9fb3;
+$teal-light: lighten( $teal, 10% );
+$teal-lighter: lighten( $teal, 20% );
+$teal-lightest: lighten( $teal, 30% );
+$teal-offwhite: lighten( $teal, 50% );
+
 $dark-primary: #455A64; /*35454d */
 $light-gray: #e6e6e6;
 $medium-gray: #bdbdbd;

@@ -19,7 +19,7 @@
       width: 100%;
 
       &:nth-child(odd) {
-        background: $light-gray;
+        background: $teal-offwhite;
       }
 
       &.is-active {
@@ -27,7 +27,7 @@
         z-index: 3;
       }
 
-      a {
+      & > a {
         align-items: center;
         display: flex;
         height: 100%;
@@ -36,13 +36,17 @@
         &[aria-selected='true'] {
           color: $white;
         }
+
+        &:hover {
+          color: $white;
+          background: $teal;
+        }
       }
     }
 
     .tabs-content {
       border: none;
-      border-right: 1rem solid $accent;
-      //box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.35);
+      border-right: 1rem solid $teal;
       flex: 1 1 auto;
       position: relative;
       z-index: 2;

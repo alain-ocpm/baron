@@ -1,6 +1,26 @@
 .top-bar-container > * {
   z-index: 4 !important;
 
+  .top-bar-right {
+    .menu {
+      a, [data-open="mainNav"] {
+        color: $black;
+        font-size: 1.5em;
+        line-height: inherit;
+        padding: 0 0 0 0.75em;
+
+        &:hover {
+          color: $teal;
+          cursor: pointer;
+        }
+
+        &:active {
+          outline: none;
+        }
+      }
+    }
+  }
+
   &:after {
     content: '';
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
