@@ -27,9 +27,13 @@ function elementExists(e) {
 //GENERAL
 
 //Reveal
-if( $('.reveal').length != 0 ) {
+if( elementExists('.reveal') ) {
   $('.reveal').on('open.zf.reveal', function() {
     $( $(this).children('.close-button') ).appendTo('.reveal-overlay');
+  });
+
+  $('.reveal').on('closed.zf.reveal', function() {
+    $('.sticky').removeClass('is-anchored').addClass('is-stuck');
   });
 }
 
@@ -57,8 +61,6 @@ if( $('.table-sortable') ) {
 
     // rows.each(function(i){
     //   console.log($(this).children().eq(thIndex).text());
-    //
-    //
     // });
   });
 }
@@ -90,5 +92,7 @@ if( $('#article-card-show-more').length != 0) {
     }
   });
 }
+
+//Releases $ so that Drupal administration interface doesn't break
 
 $.noConflict( true );
