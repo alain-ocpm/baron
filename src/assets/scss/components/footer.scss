@@ -1,7 +1,45 @@
 .footer {
   background-color: $black;
   color: white;
-  padding: $global-padding;
+  padding: 2 * $global-padding;
+
+  nav {
+    position: relative;
+    text-align: center;
+
+    &:first-child {
+      &:after {
+        border-left: 0;
+      }
+    }
+
+    &:last-child {
+      &:after {
+        border-right: 0;
+      }
+    }
+
+    &:after {
+      border-right: 1px solid black;
+      border-left: 1px solid $dark-gray;
+      content:'';
+      display: block;
+      height: 70%;
+      position: absolute;
+      top: 0;
+      transform: translate(0, 15%);
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 0;
+      }
+    }
 
   .footer-coords {
     text-align: center;
@@ -14,6 +52,12 @@
 
       li {
         display: block;
+      }
+
+      i {
+        &:before {
+          padding-right: 5px;
+        }
       }
     }
   }
