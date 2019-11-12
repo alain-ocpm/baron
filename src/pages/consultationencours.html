@@ -102,67 +102,124 @@
             <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></li>
           </ul>
         </div>
-        <div class="cell schedule">​
-            <div class="grid-x">
-              <div class="cell medium-3">
-                <ul class="vertical tabs" data-tabs id="schedule-tabs">
-                  <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Phase d'information</a></li>
-                  <li class="tabs-title"><a href="#panel2v">Audition des opinions</a></li>
-                  <li class="tabs-title"><a href="#panel3v">Phase théorique avec un titre plutôt long</a></li>
-                  <li class="tabs-title"><a href="#panel4v">Phase 4</a></li>
-                  <li class="tabs-title"><a href="#panel5v">Phase 5</a></li>
-                  <li class="tabs-title"><a href="#panel6v">Phase 6</a></li>
-                </ul>
-              </div>
-              <div class="cell medium-9">
-                <div class="tabs-content" data-tabs-content="schedule-tabs">
-                  <div class="tabs-panel is-active" id="panel1v">
-                    <div class="grid-x">
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                    </div>
+
+        <br />
+
+        <div class="cell schedule">
+          <div class="grid-x">
+            <div class="cell">
+              <ul class="tabs" data-tabs id="schedule-tabs">
+                <li class="tabs-title is-active"><a href="#phase01" aria-selected="true">Phase d'information</a></li>
+                <li class="tabs-title"><a href="#phase02">Audition des opinions</a></li>
+                <li class="tabs-title"><a href="#phase03">Phase théorique avec un titre plutôt long</a></li>
+                <li class="tabs-title"><a href="#phase04">Phase de redaction</a></li>
+              </ul>
+              <div class="tabs-content" data-tabs-content="schedule-tabs">
+                <div class="tabs-panel is-active" id="phase01">
+                  <div class="grid-x grid-margin-x grid-margin-y">
+                    <a class="event cell small-3">
+                      <h1>Activité contributive citoyenne de l'OCPM</h1>
+                    </a>
+                    <a class="event cell small-2">
+                      <h1>Activité contributive</h1>
+                      <i class="far fa-calendar-alt"><span>11 Novembre</span></i>
+                    </a>
+                    <a class="event cell small-4">
+                      <h1>Activité contributive citoyenne de l'OCPM citoyenne de l'OCPM</h1>
+                      <i class="far fa-calendar-alt"><span>11 Novembre - 12 Novembre</span></i>
+                    </a>
+                    <a class="event cell small-2">
+                      <h1>Activité contributive citoyenne</h1>
+                      <i class="far fa-calendar-alt"><span>11 Novembre</span></i>
+                    </a>
+                    <a class="event cell small-4">
+                      <h1>Activité</h1>
+                      <i class="far fa-calendar-alt"><span>11 Novembre - 12 Novembre</span></i>
+                    </a>
+                    <a class="event cell small-2">
+                      <h1>Racisme et discrimination - 24 octobre - Soirée synthèse itinérante - Centre de ressources communautaires de Côte-des-Neiges</h1>
+                      <i class="far fa-calendar-alt"><span>11 Novembre</span></i>
+                    </a>
+                    <a class="event cell small-2">
+                      <h1>Activité contributive citoyenne de l'OCPM</h1>
+                      <i class="far fa-calendar-alt"><span>11 Novembre</span></i>
+                    </a>
+                    <a class="event cell small-2">
+                      <h1>Activité contributive</h1>
+                      <i class="far fa-calendar-alt"><span>11 Novembre</span></i>
+                    </a>
+                    <a class="event cell small-4">
+                      <h1>Activité contributive citoyenne de l'OCPM</h1>
+                      <i class="far fa-calendar-alt"><span>11 Novembre - 12 Novembre</span></i>
+                    </a>
+                    <a class="event cell small-2">
+                      <h1>Activité contributive citoyenne de l'OCPM</h1>
+                      <i class="far fa-calendar-alt"><span>11 Novembre</span></i>
+                    </a>
                   </div>
-                  <div class="tabs-panel" id="panel2v">
-                    <div class="grid-x">
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                    </div>
+                </div>
+                <div class="tabs-panel" id="phase02">
+                  <div class="grid-x">
+                    b
                   </div>
-                  <div class="tabs-panel" id="panel3v">
-                    <div class="grid-x">
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                    </div>
+                </div>
+                <div class="tabs-panel" id="phase03">
+                  <div class="grid-x">
+                    c
                   </div>
-                  <div class="tabs-panel" id="panel4v">
-                    <div class="grid-x">
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                    </div>
-                  </div>
-                  <div class="tabs-panel" id="panel5v">
-                    <div class="grid-x">
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                    </div>
-                  </div>
-                  <div class="tabs-panel" id="panel6v">
-                    <div class="grid-x">
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                      {{> schedule-phase }}
-                    </div>
+                </div>
+                <div class="tabs-panel" id="phase04">
+                  <div class="grid-x">
+                    d
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
+
+        <div class="cell schedule">
+          <div class="grid-x">
+            <div class="cell medium-3">
+              <ul class="vertical tabs" data-tabs id="schedule-tabs">
+                <li class="tabs-title is-active"><a href="#phase01v" aria-selected="true">Phase d'information</a></li>
+                <li class="tabs-title"><a href="#phase02v">Audition des opinions</a></li>
+                <li class="tabs-title"><a href="#phase03v">Phase théorique avec un titre plutôt long</a></li>
+                <li class="tabs-title"><a href="#phase04v">Phase de redaction</a></li>
+              </ul>
+            </div>
+            <div class="cell medium-9">
+              <div class="tabs-content" data-tabs-content="schedule-tabs">
+                <div class="tabs-panel is-active" id="phase01v">
+                  <div class="grid-x">
+                    a
+                  </div>
+                </div>
+                <div class="tabs-panel" id="phase02v">
+                  <div class="grid-x">
+                    b
+                  </div>
+                </div>
+                <div class="tabs-panel" id="phase03v">
+                  <div class="grid-x">
+                    c
+                  </div>
+                </div>
+                <div class="tabs-panel" id="phase04v">
+                  <div class="grid-x">
+                    d
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <br />
+
+
         <div class="cell medium-6">
             <h3>Quelques documents pour commencer</h3>
             <ul>

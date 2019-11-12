@@ -1,34 +1,48 @@
 .schedule {
   .tabs {
     border: none;
+    border-bottom: 1rem solid $teal;
   }
 
   & .tabs-title {
+    &:nth-child(odd) {
+      background: $teal-offwhite;
+    }
+
     a {
       padding: $global-padding;
+
+      &:hover {
+        color: white;
+      }
     }
 
     &.is-active {
       a {
-        background: $dark-primary;
+        background: $teal;
       }
     }
   }
 
   & .tabs-content {
-    background: $dark-primary;
+    background: $light-gray;
     border: none;
+    padding: $global-padding;
 
     & .tabs-panel {
-      padding: $global-margin 0;
+      .event {
+        background: white;
+        text-align: center;
+
+        h1 {
+          background: $teal;
+          color: white;
+          font-size: 1em;
+          padding: $global-padding;
+        }
+      }
 
       .cell {
-        margin-right: $global-margin;
-
-        &:first-child {
-          margin-left: $global-margin;
-        }
-
         .accordion {
           margin-bottom: 0;
         }
