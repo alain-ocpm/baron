@@ -34,11 +34,37 @@
         background: white;
         text-align: center;
 
-        h1 {
+        .event-date {
           background: $teal;
           color: white;
-          font-size: 1em;
+          display: block;
+          margin-bottom: $global-margin;
           padding: $global-padding;
+
+          span {
+            display: block;
+          }
+
+          .event-date-day {
+            font-size: 2.5em;
+            font-weight: bold;
+            line-height: 1em;
+          }
+        }
+        .event-title, .event-time, .event-location {
+          padding: 0 $global-padding $global-margin $global-padding;
+        }
+
+        .event-time, .event-location {
+          color: $dark-gray;
+          &:before {
+            padding-right: 5px;
+          }
+        }
+
+        .event-title {
+          color: $body-font-color;
+          display: block;
         }
       }
 
