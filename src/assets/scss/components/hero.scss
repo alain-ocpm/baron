@@ -24,6 +24,11 @@
       position: absolute;
       width:100%
     }
+
+    &+.grid-container {
+      position: relative;
+      top: -80px;
+    }
   }
 
   .hero-title-text, .hero-content {
