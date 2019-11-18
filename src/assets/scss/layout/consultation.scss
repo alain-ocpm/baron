@@ -1,10 +1,16 @@
 #documentation+.cell>.sticky-container>.sticky {
-  background: gray;
-  max-height: 100vh;
+  background: $medium-gray;
+  max-height: 75vh;
+  padding: $global-padding;
   overflow-y: auto;
 
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
   [data-magellan] a.is-active, [data-magellan] a.is-active:focus {
-    background: #333;
-    color: #fff;
+    color: $teal;
+    text-decoration: underline;
   }
 }

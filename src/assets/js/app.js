@@ -38,9 +38,10 @@ if( elementExists('.reveal') ) {
 }
 
 //Sortable Tables
-if( $('.table-sortable') ) {
+if( elementExists('.table-sortable') ) {
   $('[data-table-header-sort]').click(function(e) {
-    let parent = $( e.target ).parent();
+    //Sort by date
+    let parent = $( e.target ).closest('tr');
     let thIndex = parent.children().index( e.target );
     let table = $( e.target ).parents('table');
     let rows = table.find('tr');
@@ -57,11 +58,21 @@ if( $('.table-sortable') ) {
       table.append(ar[i]);
     }
 
-    console.log(ar);
 
     // rows.each(function(i){
     //   console.log($(this).children().eq(thIndex).text());
     // });
+  });
+
+  $('[data-table-header-filter]').bind("propertychange change click keyup input paste", function(e) {
+    let parent = $( e.target ).closest('tr');
+    let thIndex = parent.children().index( e.target.closest('th') );
+    let table = $( e.target ).parents('table');
+    let rows = table.find('tr');
+
+    rows.each(function(i){
+      console.log($(this).children().eq(thIndex).text());
+    });
   });
 }
 
