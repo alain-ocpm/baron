@@ -1,5 +1,10 @@
-#documentation+.cell>.sticky-container {
+#documentation+.cell>.sticky-container>.sticky {
   background: gray;
   max-height: 100vh;
-  overflow-y: auto
+  overflow-y: auto;
+
+  [data-magellan] a.is-active, [data-magellan] a.is-active:focus {
+    background: #333;
+    color: #fff;
+  }
 }
