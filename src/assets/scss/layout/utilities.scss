@@ -1,3 +1,11 @@
+.outer-padding {
+  padding: $global-padding;
+}
+
+.outer-padding-2 {
+  padding: 2 * $global-padding;
+}
+
 .margin-default-bottom {
   margin-bottom: $global-margin;
 }

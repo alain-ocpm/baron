@@ -1,4 +1,9 @@
-@import 'foundation-icons.scss';
+i {
+  &:before {
+    padding-right: 5px;
+    vertical-align: middle;
+  }
+}
 
 blockquote {
   border: none;

@@ -1,17 +1,6 @@
 .team-card {
-  text-align: center;
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-
   > div, > a > div {
     padding: 2 * $global-padding;
-    img {
-      border-radius: 50%;
-      width: 150px;
-    }
-
   }
 }
 
@@ -19,12 +8,6 @@
   @include breakpoint(medium) {
     margin-bottom: $global-margin !important;
     width: calc(100% - 2 * 0.46875rem) !important;
-
-    > div {
-      img {
-        width: 250px;
-      }
-    }
   }
 
   @include breakpoint(large) {
