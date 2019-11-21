@@ -26,6 +26,20 @@ function elementExists(e) {
 
 //GENERAL
 
+$('body').on('resizeme.zf.trigger', function() {
+  console.log('resize');
+});
+
+//layout
+if( elementExists('.grid-container.view') ){
+  $('.grid-container.view').each(function(i){
+    $(this).css("width", $('body').innerWidth() + "px" );
+    $(this).css("left", "-" + $(this).offset().left + "px" );
+  });
+
+  //console.log(Foundation.Triggers.Listeners.Global.resizeListener());
+}
+
 //Reveal
 if( elementExists('.reveal') ) {
   $('.reveal').on('open.zf.reveal', function() {
@@ -57,7 +71,6 @@ if( elementExists('.table-sortable') ) {
     for (let i = 0; i < ar.length; i++) {
       table.append(ar[i]);
     }
-
 
     // rows.each(function(i){
     //   console.log($(this).children().eq(thIndex).text());

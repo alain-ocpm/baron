@@ -19,6 +19,7 @@
 // @include foundation-flex-grid;
 
 @import 'layout/utilities.scss';
+@import 'layout/gutters.scss';
 @import 'layout/content.scss';
 @import 'layout/cards.scss';
 @import 'layout/consultation.scss';
@@ -53,6 +54,7 @@
 @import 'components/schedule.scss';
 @import 'components/article-card.scss';
 @import 'components/team-card.scss';
+@import 'components/tooltip.scss';
 
 @import 'components/image-credit.scss';
 

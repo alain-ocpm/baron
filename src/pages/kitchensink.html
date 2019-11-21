@@ -3,6 +3,7 @@
 </div>
 <div class="grid-container">
   <div class="content content-background">
+    <h1>Titres</h1>
     <h1>Titre Niveau 1</h1>
     <p class="subheader">Sous-titre Niveau 1</p>
     <h2>Titre Niveau 2</h2>
@@ -14,6 +15,13 @@
     <h6>Titre Niveau 6</h6>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h1>Éléments de texte en ligne</h1>
+    <p>Utiliser strong pour mettre le texte en <strong>gras</strong>.</p>
+    <p>Utiliser em pour mettre le texte en <em>italique</em>.</p>
+    <p>Utiliser la classe underline pour <span class="underline">souligner</span> le texte.</p>
+    <p>Utiliser la classe uppercase pour <span class="uppercase">capitaliser</span> le texte.</p>
+    <p>Utiliser la classe lowercase pour <span class="lowercase">décapitaliser</span> le texte.</p>
 
     <div class="grid-x grid-margin-x">
       <div class="cell small-6">
@@ -31,6 +39,78 @@
       </div>
     </div>
 
+    <h1>Grilles</h1>
+
+    <style media="screen">
+      .grid-x.example {
+        background: lavender;
+      }
+      .cell.example:nth-child(even) {
+        background: lightslategray;
+      }
+      .cell.example:nth-child(odd) {
+        background: powderblue;
+      }
+    </style>
+
+    <h2>De base</h2>
+
+    <div class="grid-x example">
+      <div class="cell example">Cellule pleine largeur</div>
+    </div>
+    <div class="grid-x example">
+      <div class="cell example small-6">Cellule 6</div>
+      <div class="cell example small-6">Cellule 6</div>
+    </div>
+    <div class="grid-x example">
+      <div class="cell example medium-6 large-4">Cellule 12/6/4</div>
+      <div class="cell example medium-6 large-8">Cellule 12/6/8</div>
+    </div>
+    <h3>Marges</h3>
+    <div class="grid-x example grid-margin-x">
+      <div class="cell example medium-6 large-4">Cellule 12/6/4</div>
+      <div class="cell example medium-6 large-8">Cellule 12/6/8</div>
+    </div>
+    <h3>Padding</h3>
+    <div class="grid-x example grid-padding-x">
+      <div class="cell example medium-6 large-4">Cellule 12/6/4</div>
+      <div class="cell example medium-6 large-8">Cellule 12/6/8</div>
+    </div>
+    <h3>Marges + Padding</h3>
+    <div class="grid-x example grid-margin-x grid-padding-x">
+      <div class="cell example medium-4 large-3">Cellule 12/4/3</div>
+      <div class="cell example medium-4 large-4">Cellule 12/4/4</div>
+      <div class="cell example medium-4 large-5">Cellule 12/4/5</div>
+    </div>
+
+    <h1>Conteneurs</h1>
+    <h2>Default</h2>
+    <div class="grid-container">
+      <div class="grid-x example grid-margin-x grid-padding-x">
+        <div class="cell example medium-4 large-3">Cellule 12/4/3</div>
+        <div class="cell example medium-4 large-4">Cellule 12/4/4</div>
+        <div class="cell example medium-4 large-5">Cellule 12/4/5</div>
+      </div>
+    </div>
+    <h2>Plein</h2>
+    <div class="grid-container full">
+      <div class="grid-x example grid-margin-x grid-padding-x">
+        <div class="cell example medium-4 large-3">Cellule 12/4/3</div>
+        <div class="cell example medium-4 large-4">Cellule 12/4/4</div>
+        <div class="cell example medium-4 large-5">Cellule 12/4/5</div>
+      </div>
+    </div>
+    <h2>Fluide (JQuery)</h2>
+    <div class="grid-container view">
+      <div class="grid-x example grid-margin-x grid-padding-x">
+        <div class="cell example medium-4 large-3">Cellule 12/4/3</div>
+        <div class="cell example medium-4 large-4">Cellule 12/4/4</div>
+        <div class="cell example medium-4 large-5">Cellule 12/4/5</div>
+      </div>
+    </div>
+
+    <h1>Cartes</h1>
+
     <div class="grid-x grid-margin-x grid-margin-y align-top">
       <div class="cell">
         <div class="cards article-card grid-x grid-padding-x">
@@ -39,21 +119,6 @@
           </div>
           <div class="article-card-content small-12 medium-8">
             <h4 class="small-margin"><a href="">Beau gros titre d'un article</a></h4>
-            <p class="submitted-info">
-              <span class="article-taxonomy"><i class="far fa-clipboard-list"><a href="#">Taxonomie</a>, <a href="#">Categorie</a>, <a href="#">Trucmuche</a></i></span>
-              <span class="submitted-date show-for-medium"><i class="far fa-calendar-alt"><span>20/20/69</span></i></span>
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="cell">
-        <div class="cards article-card grid-x grid-padding-x">
-          <div class="small-12 medium-4">
-            <a href="#"><img style="width: 100%;" src="https://source.unsplash.com/random/250x150" /></a>
-          </div>
-          <div class="article-card-content small-12 medium-8">
-            <h4><a href="">Beau gros titre d'un article</a></h4>
             <p class="submitted-info">
               <span class="article-taxonomy"><i class="far fa-clipboard-list"><a href="#">Taxonomie</a>, <a href="#">Categorie</a>, <a href="#">Trucmuche</a></i></span>
               <span class="submitted-date show-for-medium"><i class="far fa-calendar-alt"><span>20/20/69</span></i></span>
@@ -111,8 +176,9 @@
         </a>
       </div>
       <div class="cell shrink">
-        <a href="" class="cards outer-padding text-center">
+        <a href="" class="cards outer-padding text-center tooltip-container">
           <i class="fad fa-play-circle fa-4x" aria-hidden="true"></i>
+          <span class="tooltip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
         </a>
       </div>
       <div class="cell shrink">

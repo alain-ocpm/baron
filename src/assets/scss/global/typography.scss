@@ -12,6 +12,18 @@ blockquote {
   line-height: 1;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
 .fas, .far, .fal {
   &:before, &:after {
     font-family: "Font Awesome 5 Pro";
