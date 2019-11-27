@@ -109,6 +109,101 @@
       </div>
     </div>
 
+    <div class="grid-container view">
+      <div class="grid-x example grid-margin-x grid-padding-x">
+        <div class="cell example small-2">Cellule 2</div>
+        <div class="cell example small-2">Cellule 2</div>
+        <div class="cell example small-2">Cellule 2</div>
+        <div class="cell example small-2">Cellule 2</div>
+        <div class="cell example auto">Cellule Auto</div>
+      </div>
+    </div>
+
+    <h1>Formulaires</h1>
+
+    <form>
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+          <div class="cell">
+            <label>Étiquette
+              <input type="text" placeholder=".medium-6.cell">
+            </label>
+          </div>
+          <div class="medium-3 cell">
+            <label>Étiquette avec un titre un peu plus long
+              <input type="text" placeholder=".medium-6.cell">
+            </label>
+          </div>
+          <div class="medium-9 cell">
+            <label>Étiquette
+              <input type="text" placeholder=".medium-6.cell">
+            </label>
+          </div>
+          <div class="small-3 cell">
+            <label for="middle-label" class="text-right middle">Étiquette centrée</label>
+          </div>
+          <div class="small-9 cell">
+            <input type="text" id="middle-label" placeholder="Entrée de texte alignée à droite et au centre">
+          </div>
+          <div class="cell">
+            <label>Limité aux chiffres
+              <input type="number" value="100">
+            </label>
+          </div>
+          <div class="cell">
+            <label>Plage de texte
+              <textarea placeholder="None"></textarea>
+            </label>
+          </div>
+          <div class="input-group cell">
+            <span class="input-group-label">Groupe</span>
+            <input class="input-group-field" type="text">
+            <select class="input-group-field">
+              <option value="gmail">@gmail.com</option>
+              <option value="outlook">@outlook.com</option>
+            </select>
+            <div class="input-group-button">
+              <input type="submit" class="button" value="Soumettre">
+            </div>
+          </div>
+          <div class="medium-6 cell">
+            <label>Menu
+              <select>
+                <option value="mtl">Montréal</option>
+                <option value="tor">Toronto</option>
+                <option value="van">Vancouver</option>
+                <option value="lta">La Tuque</option>
+              </select>
+          </label>
+          </div>
+          <div class="medium-6 cell">
+            <label>Choix multiple (ctrl)
+              <select multiple>
+                <option value="mtl">Montréal</option>
+                <option value="tor">Toronto</option>
+                <option value="van">Vancouver</option>
+                <option value="lta">La Tuque</option>
+              </select>
+            </label>
+          </div>
+          <fieldset class="large-5 cell">
+            <legend>Bouton Radio</legend>
+            <input type="radio" name="radio" value="Rouge" id="radioRed" required><label for="radioRed">Rouge</label>
+            <input type="radio" name="radio" value="Vert" id="radioGreen"><label for="radioGreen">Vert</label>
+            <input type="radio" name="radio" value="Bleu" id="radioBlue"><label for="radioBlue">Bleu</label>
+          </fieldset>
+          <fieldset class="large-7 cell">
+            <legend>Cases à cocher</legend>
+            <input id="checkbox1" type="checkbox"><label for="checkbox1">Case 1</label>
+            <input id="checkbox2" type="checkbox"><label for="checkbox2">Case 2</label>
+            <input id="checkbox3" type="checkbox"><label for="checkbox3">Case 3</label>
+          </fieldset>
+        </div>
+      </div>
+    </form>
+
+    <span class="button">Bouton</span>
+
     <h1>Cartes</h1>
 
     <div class="grid-x grid-margin-x grid-margin-y align-top">

@@ -1,12 +1,13 @@
-button {
-  background: $anchor-color;
-  border-radius: 999rem;
+.button {
+  background: $teal-light;
+  border: 0;
+  box-shadow: 0px 1px $teal-dark;
   color: $white;
   line-height: 0.75; //kinda hacky
-  padding: 0.75rem;
+  padding: 1rem;
 
   &:hover {
-    background: $anchor-color-hover;
+    background: $teal;
   }
 
   & > i {

@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import 'what-input';
 
+import {debounce} from './debounce';
+
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
 // it would execute earlier than we have assigned the global variable.
@@ -12,7 +14,6 @@ require('foundation-sites');
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
-//import test from './lib/test';
 
 $(document).foundation();
 
@@ -22,22 +23,25 @@ $(document).foundation();
 function elementExists(e) {
   //takes a jQUery selector and checks if the element is present on the page
   return ( $(e).length != 0 ) ? true : false;
-}
+};
 
 //GENERAL
 
-$('body').on('resizeme.zf.trigger', function() {
-  console.log('resize');
-});
-
 //layout
 if( elementExists('.grid-container.view') ){
-  $('.grid-container.view').each(function(i){
-    $(this).css("width", $('body').innerWidth() + "px" );
-    $(this).css("left", "-" + $(this).offset().left + "px" );
-  });
+  var resize = debounce(function() {
+    $('.grid-container.view').each(function(i){
+      $(this).css("width", $('body').innerWidth() + "px" );
+      $(this).css("left", "");
+      $(this).css("left", "-" + $(this).offset().left + "px" );
+    });
+  }, 100);
 
-  //console.log(Foundation.Triggers.Listeners.Global.resizeListener());
+  resize();
+
+  $(window).on('resize', function(e){
+    resize();
+  });
 }
 
 //Reveal
