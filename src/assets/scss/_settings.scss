@@ -438,6 +438,9 @@ $form-label-color: $black;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 2.5;
+label.middle {
+  padding: 0.35rem 0 !important;
+}
 $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
@@ -464,12 +467,12 @@ $form-button-radius: $global-radius;
 // 21. Label
 // ---------
 
-$label-background: $primary-color;
+$label-background: $teal;
 $label-color: $white;
 $label-color-alt: $black;
 $label-palette: $foundation-palette;
 $label-font-size: 0.8rem;
-$label-padding: 0.33333rem 0.5rem;
+$label-padding: 0.5rem 0.75rem;
 $label-radius: $global-radius;
 
 // 22. Media Object
@@ -785,13 +788,13 @@ $switch-paddle-transition: all 0.25s ease-out;
 
 $table-background: $white;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
-$table-padding: rem-calc(8 10 10);
+$table-border: 1px solid smart-scale($teal-offwhite, -25%);
+$table-padding: rem-calc(10 16 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
 $table-is-striped: true;
-$table-striped-background: smart-scale($table-background, $table-color-scale);
+$table-striped-background: smart-scale($teal-offwhite, -25%);
 $table-stripe: even;
 $table-head-background: smart-scale($table-background, $table-color-scale / 2);
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
@@ -801,6 +804,23 @@ $table-head-font-color: $body-font-color;
 $table-foot-font-color: $body-font-color;
 $show-header-for-stacked: false;
 $table-stack-breakpoint: medium;
+
+table {
+  thead {
+  background: $teal;
+  color: white;
+
+    * {
+      font-weight: normal !important;
+    }
+  }
+}
+
+.table-rounded-container {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  overflow: hidden;
+}
 
 // 51. Tabs
 // --------

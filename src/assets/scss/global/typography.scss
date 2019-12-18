@@ -24,6 +24,14 @@ blockquote {
   text-transform: lowercase;
 }
 
+.round {
+  border-radius: 999rem;
+
+  &.label {
+    border-radius: 999rem;
+  }
+}
+
 .fas, .far, .fal {
   &:before, &:after {
     font-family: "Font Awesome 5 Pro";
@@ -36,5 +44,37 @@ blockquote {
 .fa, .fas {
   &:before, &:after {
     font-weight: 900;
+  }
+}
+
+.list-checkbox {
+  list-style: none;
+  margin-left: 0;
+
+  [type='checkbox'] {
+    margin: 0;
+  }
+}
+
+.label {
+  cursor: pointer !important;
+  i {
+    color: $teal;
+    background: white;
+    border-radius: 999rem;
+    display: inline-block;
+    margin-left: 5px;
+
+    &:before {
+      padding: 0 0.25em;
+    }
+  }
+
+  &:hover {
+    background: red;
+
+    i {
+      color: red;
+    }
   }
 }

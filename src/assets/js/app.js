@@ -55,6 +55,10 @@ if( elementExists('.reveal') ) {
   });
 }
 
+if( elementExists('.table-rounded') ) {
+  $('.table-rounded').wrap( "<div class='table-rounded-container'></div>" )
+}
+
 //Sortable Tables
 if( elementExists('.table-sortable') ) {
   $('[data-table-header-sort]').click(function(e) {

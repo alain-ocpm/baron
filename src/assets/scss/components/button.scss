@@ -26,3 +26,7 @@
     }
   }
 }
+
+.input-group > :last-child, .input-group > :last-child.input-group-button > * {
+  border-radius: 0 999rem 999rem 0;
+}
